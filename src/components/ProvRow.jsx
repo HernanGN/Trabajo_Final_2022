@@ -12,8 +12,8 @@ import { setSelectedAct } from "../redux/provSlice";
 const ProvRow = ({ prov }) => {
     const dispatch = useDispatch()
     const setProvAct = (act) => {
-        dispatch(setSelectedProv(prov))
-        dispatch(setSelectedAct(act))
+        dispatch(setSelectedProv(prov));
+        dispatch(setSelectedAct(act));
     }
     return (
         <TableRow>

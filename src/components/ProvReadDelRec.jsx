@@ -30,9 +30,10 @@ const ProvReadDelRec = () => {
             .catch(err => console.error(err));
             alert("Se envió el correo de recuperación de contraseña al Prestador")
         }
-        dispatch(setSelectedProv(null))
-        dispatch(setSelectedAct(""))
-        dispatch(setFilter(""))
+        dispatch(setSelectedProv(null));
+        dispatch(setSelectedAct(""));
+        dispatch(setFilter(""));
+        window.location.reload();
     }
     var col = "primary"
     switch (selectedAct) {

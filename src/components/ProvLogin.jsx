@@ -29,6 +29,7 @@ const ProvLogin = () => {
         dispatch(setSelectedProv(null))
         dispatch(setSelectedAct(""))
         dispatch(setFilter(""))
+        window.location.reload();
     }
     const mensaje = (respuesta) => {
         alert(respuesta)

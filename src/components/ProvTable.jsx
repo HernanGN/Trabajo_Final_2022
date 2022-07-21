@@ -15,7 +15,7 @@ function ProvTable() {
         .then(res => res.json())
         .then(data => dispatch(setData(data)))
         .catch(error => dispatch(setError(true)));
-    })
+    }, [])
     if (state.error) return (
       <>
         <h3>Error al consumir servicios API...</h3>

@@ -30,10 +30,11 @@ const ProvEdit = () => {
         .then(res => res.json())
         .then(res => console.log(res))
         .catch(err => console.error(err))
-        alert("Se actualizó el Prestador")
-        dispatch(setSelectedProv(null))
-        dispatch(setSelectedAct(""))
-        dispatch(setFilter(""))
+        alert("Se actualizó el Prestador");
+        dispatch(setSelectedProv(null));
+        dispatch(setSelectedAct(""));
+        dispatch(setFilter(""));
+        window.location.reload();
     }
     return (
         <Card sx={{ height: '75vh', width: '30vw', display: 'flex', flexDirection: 'column', mt: 5 }}>
